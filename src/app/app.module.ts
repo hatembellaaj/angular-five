@@ -7,9 +7,10 @@ import {MenuPositionExample} from './menu-position-example';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
+import { TeacherComponent } from './teacher/teacher.component';
 
 @NgModule({
-  declarations: [MenuPositionExample],
+  declarations: [MenuPositionExample, TeacherComponent],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -20,6 +21,6 @@ import {HttpClientModule} from '@angular/common/http';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [MenuPositionExample],
+  bootstrap: [MenuPositionExample, TeacherComponent],
 })
 export class AppModule {}
