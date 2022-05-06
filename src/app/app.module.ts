@@ -8,9 +8,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatNativeDateModule} from '@angular/material/core';
 import {HttpClientModule} from '@angular/common/http';
 import { TeacherComponent } from './teacher/teacher.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [MenuPositionExample, TeacherComponent],
+  declarations: [MenuPositionExample, TeacherComponent, FooterComponent],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -21,6 +22,6 @@ import { TeacherComponent } from './teacher/teacher.component';
     ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [MenuPositionExample, TeacherComponent],
+  bootstrap: [MenuPositionExample, TeacherComponent, FooterComponent],
 })
 export class AppModule {}

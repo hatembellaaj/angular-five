@@ -1,4 +1,11 @@
 <div class="TeacherComponent">
+  <br>
+  <img  alt="Devenir formateur" width="100%" height="500" src="./assets/formateur.jpeg" >
+  <br>
+  
+<div id="block_container" style="width: 100%;">
+<div>
+
     <br>
     <br>
  <label for="forminator-field-name-1" class="forminator-label">Nom &amp; Prénom <span class="forminator-required">*</span></label>
@@ -9,10 +16,41 @@
       <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
     </mat-form-field>
     <br>
-    <br>
-    <mat-form-field appearance="fill">
-        <mat-label>Enter your email</mat-label>
+    <label for="forminator-field-name-1" class="forminator-label">Email <span class="forminator-required">*</span></label>
+    <br>      
+    <mat-form-field appearance="fill" [style.width.%]="100">
+        <mat-label>Par exemple : Jacques@martin.com</mat-label>
         <input matInput placeholder="pat@example.com" [formControl]="email" required>
         <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
       </mat-form-field>
+  
+  <label for="forminator-field-name-1" class="forminator-label">Numéro de téléphone <span class="forminator-required">*</span></label>
+  <br>      
+  <mat-form-field appearance="fill" [style.width.%]="100" type="text" >
+      <mat-label>Par exemple : 00216 25111111</mat-label>
+      <input matInput placeholder="pat@example.com" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <label for="forminator-field-name-1" class="forminator-label">Nom de la formation <span class="forminator-required">*</span></label>
+    <br>      
+    <mat-form-field appearance="fill" [style.width.%]="100">
+      <mat-label>Textarea</mat-label>
+      <textarea matInput></textarea>
+    </mat-form-field>
+
+    <label for="forminator-field-name-1" class="forminator-label">Télécharger votre CV <span class="forminator-required">*</span></label>
+    <br>      
+  
+    <button mat-raised-button color="primary" style="width:400px">Choisissez un fichier</button>
+    <label for="forminator-field-name-1" class="forminator-label">Aucun fichier sélectionné <span class="forminator-required"></span></label>
+ 
+    <br><br>
+    <button mat-raised-button color="warn" style="width:400px">Envoyer le message </button>
+
   </div>
+
+  <div>
+    <img  alt="Devenir formateur" style="width: 300;height: 100%;" src="../../assets/teacher.png" >
+  </div>
+
+</div>
